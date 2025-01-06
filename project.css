@@ -18,6 +18,10 @@
 
 body, html { overflow-x:hidden; }
 
+body {
+  position: relative
+}
+
     html, body {
         margin: 0;
         padding: 0;
