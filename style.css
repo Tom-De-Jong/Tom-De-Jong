@@ -1,0 +1,194 @@
+@keyframes fadeIn { 
+0% {
+    opacity: 0.5;
+     }
+          100% {
+        opacity: 1;
+    } 
+}
+
+@keyframes cooltext { 
+    0% {
+        font-weight: 1;
+         }
+              100% {
+            
+        } 
+    }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+    }
+
+.div1{
+    background-color: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body:active{
+opacity: 1;
+    }
+
+.logo{
+    height: 150px;
+}
+
+ul {
+    display: flex;
+    float: right;
+}
+
+ul, li{
+    list-style: none;
+}
+
+ul, li, a{
+    font-family: "Lexend Peta", serif;
+    padding: 0px;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+ul, li, a:hover{
+    color: rgb(129, 129, 129);
+    transition: 0.3s ease;
+}
+
+.text1 {
+    font-family: "Lexend Peta", serif;
+    letter-spacing: 10px;
+    text-align: center;
+    animation: cooltext 0.7s ease;
+}
+
+.div2{
+    width: 55%;
+}
+
+.container1{
+    justify-content: center;
+    display: flex;
+}
+
+.text2{
+    padding: 10px;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.a1{
+    padding: 0px;
+    margin: 0px;
+}
+
+#text3 {
+    font-family: "Lexend Peta", serif;
+    letter-spacing: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button1{
+    border: black solid 2px;
+    width: 200px;
+    height: 75px;
+    background-color: white;
+    color: black;
+    font-family: "Lexend Peta", serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.button1:hover{
+border: solid black 5px;
+}
+
+.buttoncontainer{
+    text-align: center;
+}
+
+.onsite{
+    text-shadow: 0px 0px 5px #FFFFFF;
+   }
+
+@media (max-width : 1100px) {
+    .div1{
+        background-color: black;
+        height: 250px;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    
+    html, body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    .logo{
+        height: 250px;
+    }
+    
+    ul {
+        display: block;
+        float: right;
+    }
+    
+    ul, li{
+        list-style: none;
+    }
+    
+    ul, li, a{
+        font-family: "Lexend Peta", serif;
+        padding: 0px;
+        margin:  23px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    
+    .text1 {
+        font-family: "Lexend Peta", serif;
+        letter-spacing: 8px;
+        text-align: center;
+    }
+
+    #text3 {
+        font-family: "Lexend Peta", serif;
+        letter-spacing: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    
+    .div2{
+        width: 90%;
+    }
+    
+    .container1{
+        justify-content: center;
+        display: flex;
+    }
+    
+    .text2{
+        padding: 10px;
+        font-family: "Kanit", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}

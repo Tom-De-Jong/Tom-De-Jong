@@ -1,0 +1,180 @@
+@keyframes fadeIn { 
+    0% {
+            opacity: 0.5;
+         }
+              100% {
+            opacity: 1;
+        } 
+    }
+
+    @keyframes BoxSize {
+        0% {
+            letter-spacing: 10px;
+        }
+        100% {
+           
+        }
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 0.5s ease forwards;
+        opacity: 0;
+        }
+
+.div1{
+    background-color: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 150px;
+}
+
+ul {
+    display: flex;
+    float: right;
+}
+
+ul, li{
+    list-style: none;
+}
+
+ul, li, a{
+    font-family: "Lexend Peta", serif;
+    padding: 0px;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    
+}
+
+ul, li, a:hover{
+    color: rgb(129, 129, 129);
+    transition: 0.3s ease;
+}
+
+.onsite{
+    text-shadow: 0px 0px 5px #FFFFFF;
+   }
+
+.text1{
+    font-family: "Lexend Peta", serif;
+    text-align: center;
+    animation: BoxSize 0.7s ease forwards;
+   }
+
+.a1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container1{
+display: flex;
+justify-content: center;
+}
+
+.div2{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 100px;
+}
+
+.imgholder{
+width: 35%;
+}
+
+
+.img{
+    width: 100%;
+    border: solid 5px grey;
+    margin: 0px;
+    transition: ease 0.7s;
+    opacity: 0.7;
+}
+
+.img:hover{
+    border: solid 5px rgb(0, 0, 0);
+    opacity: 1;
+}
+
+
+   @media (max-width : 1100px) {
+
+    @keyframes TextSizeMob {
+        0% {
+         letter-spacing: 2px;
+        }
+        100% {
+           
+        }
+    }
+
+    .div1{
+        background-color: black;
+        height: 250px;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    
+    html, body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    .logo{
+        height: 250px;
+    }
+    
+    ul {
+        display: block;
+        float: right;
+    }
+    
+    ul, li{
+        list-style: none;
+    }
+    
+    ul, li, a{
+        font-family: "Lexend Peta", serif;
+        padding: 0px;
+        margin:  23px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    .img{
+        width: 75%;
+        border: solid 5px grey;
+        margin: 0px;
+    }
+
+    .text1{
+        animation: TextSizeMob 0.7s ease forwards;
+    }
+
+    .container1 {
+    justify-content: center;
+    display: flex;
+   
+    }
+
+    .div2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .imgholder{
+        width: 100%;
+    }
+}

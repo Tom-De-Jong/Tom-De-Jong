@@ -1,0 +1,151 @@
+@keyframes fadeIn { 
+    0% {
+            opacity: 0.5;
+         }
+              100% {
+            opacity: 1;
+        } 
+    }
+    
+
+    @keyframes BoxSize {
+        0% {
+            letter-spacing: 10px;
+        }
+        100% {
+           
+        }
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 0.5s ease forwards;
+        opacity: 0;
+        }
+
+.div1{
+    background-color: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 150px;
+}
+
+ul {
+    display: flex;
+    float: right;
+}
+
+ul, li{
+    list-style: none;
+}
+
+ul, li, a{
+    font-family: "Lexend Peta", serif;
+    padding: 0px;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    
+}
+
+ul, li, a:hover{
+    color: rgb(129, 129, 129);
+    transition: 0.3s ease;
+}
+
+.text1{
+    text-align: center;
+    font-family: "Lexend Peta", serif;
+}
+
+.div2{
+    width: 75%;
+    display: block;
+    border: black solid 3px;
+    animation: BoxSize 0.7s ease forwards;
+    height: auto;
+    margin: 90px;
+}
+
+.container1{
+    justify-content: center;
+    display: flex;
+}
+
+.text2{
+    font-family: "Kanit", serif;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    padding:  0px;
+}
+
+.a1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.onsite{
+    text-shadow: 0px 0px 5px #FFFFFF;
+   }
+
+@media (max-width : 1100px) {
+
+    @keyframes BoxSizeMob {
+        0% {
+            border: 15px solid black;
+        }
+        100% {
+           
+        }
+    }
+
+    .div1{
+        background-color: black;
+        height: 250px;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    
+    html, body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    .logo{
+        height: 250px;
+    }
+    
+    ul {
+        display: block;
+        float: right;
+    }
+    
+    ul, li{
+        list-style: none;
+    }
+    
+    ul, li, a{
+        font-family: "Lexend Peta", serif;
+        padding: 0px;
+        margin:  23px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    .div2{
+        animation: BoxSizeMob 0.7s ease;
+        margin: 40px;
+    }
+}
