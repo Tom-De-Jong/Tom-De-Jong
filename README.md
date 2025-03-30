@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">I'm a young developer from the Netherlands. I code with HTML CSS and Javascript. Check out my websit!<br>https://tom-de-jong.github.io/Tom-De-Jong/</p>
+<p align="left">I'm a young developer from the Netherlands. I code with HTML CSS and Javascript. Check out my website!<br>https://tom-de-jong.github.io/Tom-De-Jong/</p>
 
 ###
 
