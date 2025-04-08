@@ -51,7 +51,7 @@ body{
 
 @keyframes TextOnLoad {
     0% {
-      letter-spacing: 10px;
+      letter-spacing: -4px;
     }
     100% {
 
@@ -123,4 +123,21 @@ body{
         float: none;
         margin: 100px;
     }
+
+    .header1{
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 40px;
+        padding: 0px;
+        letter-spacing: 5px;
+    }
+
+    @keyframes TextOnLoad {
+        0% {
+          letter-spacing: 5px;
+        }
+        100% {
+    
+        }
+      }
 }
