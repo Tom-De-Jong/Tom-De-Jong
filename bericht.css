@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .HeaderDiv{
@@ -28,6 +29,7 @@ body{
     font-size: 15px;
     padding: 8px;
     transition: 0.5s ease;
+    color: black;
     }
 
 .button1:hover{
@@ -87,6 +89,8 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     transition: 0.5s ease;
+    background-color: white;
+    color: rgb(39, 39, 39);
 }
 
 .inputs:focus{
@@ -106,13 +110,13 @@ body{
         width: 100%;
         display: block;
         text-align: center;
-        outline: dotted gray;
+
     }
 
     .logo{
         height: 150px;
         margin: 25px;
-        outline: dotted gray;
+
     }
 
     .button1{
