@@ -1,0 +1,210 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.HeaderDiv{
+    height: 200px;
+    width: 100%;
+
+}
+
+.logo{
+    height: 150px;
+    margin: 25px;
+}
+
+.Href{
+    margin: 0px;
+}
+
+.button1{
+height: 65px;
+width: 150px;
+border-radius: 50px;
+outline: none;
+border: black solid 3px;
+float: right;
+margin: 60px;
+background-color: white;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 15px;
+padding: 8px;
+transition: 0.5s ease;
+}
+
+.button1:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.button2{
+height: 80px;
+width: 250px;
+border-radius: 50px;
+outline: none;
+border: rgb(255, 255, 255) solid 3px;
+margin: 60px;
+background-color: rgb(39, 39, 39);
+color: white;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 20px;
+padding: 8px;
+transition: 0.5s ease;
+}
+
+.button2:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.header1{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 0px;
+    animation: TextOpen 1.3s ease;
+}
+
+.header2{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    animation: TextOpen 1.8s ease;
+}
+
+@keyframes TextOpen {
+    0% {
+      letter-spacing: -1px;
+    }
+    100% {
+
+    }
+  }
+
+.ProfilePicture{
+    width: 300px;
+    border-radius: 50%;
+    margin: 60px;
+    -webkit-box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+    animation: PfpAnim ease 1.8s;
+}
+
+@keyframes PfpAnim {
+    0% {
+      transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+
+.ProfilePicture:hover{
+transform: scale(1.075);
+}
+
+.mainsection{
+    text-align: center;
+}
+
+.CodingImageClass{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.CodingImage{
+    width: 40%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.informationDiv{
+    background-color: rgb(39, 39, 39);
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#white{
+    color: white;
+}
+
+/*
+Voeg dit wanneer je meer projecten hebt.
+
+.ProjectShowroom{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 50px;
+width: 80%;
+margin:  0 auto;
+text-align: center;
+}
+
+
+.sitePreview{
+    width: 90%;
+    border: solid rgb(39, 39, 39) 5px;
+    
+}
+Haal dan wel de huidige .projectshoroom weg
+en doe bij .sitePreview width naar 80 of iets
+*/
+
+.ProjectShowroom{
+    text-align: center;
+}
+
+.sitePreview{
+    width: 60%;
+    border: solid rgb(39, 39, 39) 5px;
+    transition: 0.5s ease;
+}
+
+.CenterShowroom{
+display: flex;
+justify-content: center;
+}
+
+.Href{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sitePreview:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 473px) {
+
+    .HeaderDiv{
+        height: 400px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        outline: dotted gray;
+    }
+
+    .logo{
+        height: 150px;
+        margin: 25px;
+        outline: dotted gray;
+    }
+
+    .button1{
+        float: none;
+        margin: 100px;
+    }
+
+    .CodingImage{
+        width: 80%;
+    }
+}
