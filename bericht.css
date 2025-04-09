@@ -106,11 +106,11 @@ body{
 @media only screen and (max-width: 473px) {
 
     .HeaderDiv{
-        height: 400px;
+        height: 225px;
         width: 100%;
         display: block;
         text-align: center;
-
+        padding: 0px;
     }
 
     .logo{
@@ -121,7 +121,8 @@ body{
 
     .button1{
         float: none;
-        margin: 100px;
+        margin: 0px;
+        display: none;
     }
 
     .header1{
