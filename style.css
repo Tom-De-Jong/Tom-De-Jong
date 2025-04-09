@@ -17,6 +17,7 @@ body{
 
 .Href{
     margin: 0px;
+    padding: 0px;
 }
 
 .button1{
@@ -44,6 +45,7 @@ transition: 0.5s ease;
 .button2{
 height: 80px;
 width: 250px;
+max-width: 60%;
 border-radius: 50px;
 outline: none;
 border: rgb(255, 255, 255) solid 3px;
@@ -114,6 +116,10 @@ transform: scale(1.075);
 
 .mainsection{
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100dvh;
+
 }
 
 .CodingImageClass{
@@ -188,11 +194,11 @@ justify-content: center;
 @media only screen and (max-width: 473px) {
 
     .HeaderDiv{
-        height: 400px;
+        height: 225px;
         width: 100%;
         display: block;
         text-align: center;
-
+        padding: 0px;
     }
 
     .logo{
@@ -203,7 +209,8 @@ justify-content: center;
 
     .button1{
         float: none;
-        margin: 100px;
+        margin: 0px;
+        display: none;
     }
 
     .CodingImage{
@@ -219,4 +226,5 @@ justify-content: center;
         transition: 0.5s ease;
         animation: PfpAnim ease 1.8s;
     }
+
 }
