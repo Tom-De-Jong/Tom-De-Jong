@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Coding since 2023<br>📚 I'm currently working on my webdevelopement skills<br><br>🎯 Goals: Starting my own webdevelopement business<br><br>🎲 Fun fact: I am 16 years old!!</p>
+<p align="left">✨ Coding since 2021<br>📚 I'm currently working on my webdevelopement skills<br><br>🎯 Goals: Starting my own webdevelopement business<br><br>🎲 Fun fact: I am 16 years old!!</p>
 
 ###
 
