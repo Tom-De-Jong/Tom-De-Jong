@@ -8,7 +8,7 @@
 
 body{
 background: 0F1621;
-background: linear-gradient(0deg, #0F1621 0%, rgba(70, 82, 114, 1) 100%);
+background: linear-gradient(0deg, #202d41 0%, rgba(70, 82, 114, 1) 100%);
 }
 
 .HamburgerMenuOn{
@@ -20,6 +20,12 @@ background: linear-gradient(0deg, #0F1621 0%, rgba(70, 82, 114, 1) 100%);
     animation: show 0.1s ease forwards;
     position: fixed;
     width: 100%;
+
+        -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-top: #0f162185 2px solid;
+    padding-top: 10px;
+    z-index: 10;
 }
 
 @keyframes show {
@@ -36,6 +42,7 @@ background: linear-gradient(0deg, #0F1621 0%, rgba(70, 82, 114, 1) 100%);
 .navBar{
     height: 100px;
     background-color: rgba(0, 0, 0, 0.26);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
@@ -193,7 +200,7 @@ justify-content: center;
     width: 100%;
     border: #b9b9b90a 2px solid;
     border-radius: 25px;
-    height: 150px;
+    height: 180px;
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
@@ -219,7 +226,6 @@ font-family: "DM Mono", monospace;
     border: #b9b9b90a 2px solid;
     border-radius: 10px;
     height: 100px;
-    align-self: center;
     margin-left: auto;
     margin-right: 25px;
     background-color: #0f162100;
@@ -243,9 +249,20 @@ font-family: "DM Mono", monospace;
 margin-bottom: 50px;
 }
 
+.contactBox a {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
 .a{
     color: white;
     text-decoration: none;
+    transition: ease 0.4s;
+}
+
+.a:hover{
+    color: rgb(159, 174, 255);
 }
 
 @media (max-width: 900px) {
@@ -294,6 +311,9 @@ margin-bottom: 25px;
 .aboutMeParagraph{
     font-size: 20px;
 }
+.contactBox a {
+    margin-right: 0px;
+}
 }
 
 @media (max-width: 500px) {
@@ -314,6 +334,9 @@ display: block;
     display: none;
 }
 
+.contactHeader{
+    font-size: 30px;
+}
 }
 
 @media (max-width: 500px) {
