@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+background: 0F1621;
+background: linear-gradient(0deg, #0F1621 0%, rgba(70, 82, 114, 1) 100%);
+}
+
+.navBar{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.HamburgerMenuOff{
+    display: none;
+}
+
+.HamburgerMenuOn{
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 120px;
+    opacity: 0;
+    animation: show 0.1s ease forwards;
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.logoHeader{
+    color: white;
+    font-family: "Azeret Mono", monospace;
+    margin-left: 25px;
+}
+
+.navButtonList{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.hamburgerButton{
+    display: none;
+}
+
+.listItemMain{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.listItem{
+    padding-bottom: 15px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heroSection{
+display: flex;
+ justify-content: center;
+ height: calc(100vh - 100px - 70px);
+}
+
+.contactHeader{
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: calc(35vh - 100px);
+    padding-bottom: 50px;
+}
+
+.contactInfoHeader{
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.mark{
+    color: #7470e379;
+}
+
+.copyrightText{
+    text-align: center;
+color: white;
+font-size: 15px;
+font-family: "DM Mono", monospace;
+margin-bottom: 50px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+    transition: ease 0.4s;
+}
+
+.a:hover{
+    color: rgb(159, 174, 255);
+}
+
+.a2{
+    color: #7470e379;
+    transition: ease 0.4s;
+}
+
+@media (max-width: 1000px) {
+    .contactHeader{
+    font-family: "Inter", sans-serif;
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    margin-top: calc(35vh - 100px);
+    padding-bottom: 50px;
+}
+
+.contactInfoHeader{
+    font-family: "Inter", sans-serif;
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+}
+}
+
+@media (max-width: 500px) {
+
+.hamburgerButton{
+display: block;
+}
+
+.listItemMain{
+    display: none;
+}
+
+}

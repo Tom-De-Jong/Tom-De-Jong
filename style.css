@@ -1,230 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+background: 0F1621;
+background: linear-gradient(0deg, #0F1621 0%, rgba(70, 82, 114, 1) 100%);
 }
 
-.HeaderDiv{
-    height: 200px;
+.HamburgerMenuOn{
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 120px;
+    opacity: 0;
+    animation: show 0.1s ease forwards;
+    position: fixed;
     width: 100%;
-
 }
 
-.logo{
-    height: 150px;
-    margin: 25px;
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-.Href{
-    margin: 0px;
-    padding: 0px;
+.HamburgerMenuOff{
+    display: none;
 }
 
-.button1{
-height: 65px;
-width: 150px;
-border-radius: 50px;
-outline: none;
-border: black solid 3px;
-float: right;
-margin: 60px;
-background-color: white;
-color: black;
-font-family: "Poppins", sans-serif;
-font-weight: 500;
-font-size: 15px;
-padding: 8px;
-transition: 0.5s ease;
+.navBar{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.button1:hover{
-    background-color: rgb(0, 0, 0);
+.logoHeader{
     color: white;
+    font-family: "Azeret Mono", monospace;
+    margin-left: 25px;
 }
 
-.button2{
-height: 80px;
-width: 250px;
-max-width: 60%;
-border-radius: 50px;
-outline: none;
-border: rgb(255, 255, 255) solid 3px;
-margin: 60px;
-background-color: rgb(39, 39, 39);
-color: white;
-font-family: "Poppins", sans-serif;
-font-weight: 500;
-font-size: 20px;
-padding: 8px;
-transition: 0.5s ease;
+.navButtonList{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-left: auto;
+    margin-right: 25px;
 }
 
-.button2:hover{
-    color: rgb(0, 0, 0);
-    background-color: white;
-}
-
-.header1{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-size: 40px;
-    padding: 0px;
-    animation: TextOpen 1.3s ease;
-}
-
-.header2{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
+.listItemMain{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Azeret Mono", monospace;
     font-size: 20px;
-    margin: 0px;
-    padding: 0px;
-    animation: TextOpen 1.8s ease;
+    font-weight: bold;
 }
 
-@keyframes TextOpen {
-    0% {
-      letter-spacing: -1px;
-    }
-    100% {
-
-    }
-  }
-
-.ProfilePicture{
-    width: 300px;
-    border-radius: 50%;
-    margin: 60px;
-    -webkit-box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.5); 
-    box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.5);
-    transition: 0.5s ease;
-    animation: PfpAnim ease 1.8s;
+.listItem{
+    padding-bottom: 15px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-@keyframes PfpAnim {
-    0% {
-      transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-  }
-
-
-.ProfilePicture:hover{
-transform: scale(1.075);
+.hamburgerButton{
+    display: none;
 }
 
-.mainsection{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    height: 100dvh;
-
+.heroSection{
+display: flex;
+ justify-content: center;
+ height: calc(100vh - 100px);
 }
 
-.CodingImageClass{
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
+.mark{
+color: #7470E3;
+transition: 0.4s ease;
 }
 
-.CodingImage{
-    width: 40%;
-    padding: 0px;
-    margin: 0px;
+.mark:hover{
+text-shadow: #7470e379 0px 0px 10px;
 }
 
-.informationDiv{
-    background-color: rgb(39, 39, 39);
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-#white{
+.heroHeader{
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
     color: white;
-}
-
-/*
-Voeg dit wanneer je meer projecten hebt.
-
-.ProjectShowroom{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 50px;
-width: 80%;
-margin:  0 auto;
-text-align: center;
-}
-
-
-.sitePreview{
-    width: 90%;
-    border: solid rgb(39, 39, 39) 5px;
-    
-}
-Haal dan wel de huidige .projectshoroom weg
-en doe bij .sitePreview width naar 80 of iets
-*/
-
-.ProjectShowroom{
     text-align: center;
-}
-
-.sitePreview{
-    width: 60%;
-    border: solid rgb(39, 39, 39) 5px;
     transition: 0.5s ease;
 }
 
-.CenterShowroom{
+.center{
+    width: 80%;
+}
+
+#hh1{
+    opacity: 5%;
+}
+
+#hh2{
+    opacity: 10%;
+}
+
+#hh3{
+    opacity: 25%;
+}
+
+#hh4{
+    opacity: 40%;
+}
+
+.heroParagraph{
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.aboutMeSection{
 display: flex;
 justify-content: center;
 }
 
-.Href{
-    margin: 0px;
-    padding: 0px;
+.aboutMeHeader{
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: left;
+    text-decoration: underline #7470E3;
 }
 
-.sitePreview:hover{
+.aboutMeParagraph{
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+.markRed{
+    font-weight: bolder;
+    color: #FF9E9E;
+    text-decoration: underline;
+}
+
+.cardHolder{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 48%;
+    border: #b9b9b90a 2px solid;
+    border-radius: 25px;
+    height: 250px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
     transform: scale(1.05);
 }
 
-@media only screen and (max-width: 473px) {
+.cardHeader{
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-size: 80px;
+  color: white;
+  margin: 25px;
+}
 
-    .HeaderDiv{
-        height: 225px;
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 0px;
-    }
+.cardParagrapher{
+    color: #FFFFFF;
+    opacity: 50%;
+    font-family: "DM Mono", monospace;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
 
-    .logo{
-        height: 150px;
-        margin: 25px;
+.contactBox{
+    width: 100%;
+    border: #b9b9b90a 2px solid;
+    border-radius: 25px;
+    height: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+}
 
-    }
+.contactHeader{
+font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  margin: 25px;
+}
 
-    .button1{
-        float: none;
-        margin: 0px;
-        display: none;
-    }
+.contactParagraph{
+    font-family: "DM Mono", monospace;
+    font-size: 20px;
+    color: white;
+    margin-left: 25px;
+}
 
-    .CodingImage{
-        width: 80%;
-    }
+.contactButton{
+    width: 250px;
+    border: #b9b9b90a 2px solid;
+    border-radius: 10px;
+    height: 100px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 25px;
+    background-color: #0f162100;
+    color: white;
 
-    .ProfilePicture{
-        max-width: 60%;
-        border-radius: 50%;
-        margin: 60px;
-        -webkit-box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.5); 
-        box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.5);
-        transition: 0.5s ease;
-        animation: PfpAnim ease 1.8s;
-    }
+    font-family: "DM Mono", monospace;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.7s ease;
+}
 
+.contactButton:hover{
+    transform: perspective(300px) rotateY(-15deg);
+}
+
+.copyrightText{
+text-align: center;
+color: white;
+font-size: 15px;
+font-family: "DM Mono", monospace;
+margin-bottom: 50px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+
+.heroHeader{
+font-size: 40px;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+.heroParagraph{
+    font-size: 20px;
+}
+
+.cardHolder{
+display: block;
+}
+
+.card{
+width: 100%;
+margin-bottom: 25px;
+}
+
+.contactBox{
+    height: 170px;
+}
+}
+
+@media (max-width: 750px) {
+.contactBox{
+    display: block;
+    height: 250px;
+    text-align: center;
+}
+
+.contactButton{
+    height: 70px;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.contactParagraph{
+    margin-left: 0px;
+}
+
+.aboutMeParagraph{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 500px) {
+
+.heroHeader{
+font-size: 20px;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+
+
+
+.hamburgerButton{
+display: block;
+}
+
+.listItemMain{
+    display: none;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.contactBox{
+    height: 300px;
+}
+
+.card{
+    height: 300px;
+}
 }
