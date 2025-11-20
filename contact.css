@@ -96,7 +96,7 @@ display: flex;
     font-size: 60px;
     color: white;
     text-align: center;
-    margin-top: calc(35vh - 100px);
+    margin-top: calc(25vh - 100px);
     padding-bottom: 50px;
 }
 
@@ -134,19 +134,58 @@ margin-bottom: 50px;
     transition: ease 0.4s;
 }
 
+.contactCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.contactContainer{
+    width: 60%;
+    height: 150px;
+    border: #b9b9b90a 2px solid;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button{
+    border: #b9b9b90a 2px solid;
+    border-radius: 10px;
+    height: 50px;
+    width: 60%;
+    margin-top: 20px;
+    background-color: #202d4100;
+    color: white;
+    font-family: "DM Mono", monospace;
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+
+.contactInfoHeader{
+    font-size: 3vw;
+}
+
+}
+
 @media (max-width: 1000px) {
     .contactHeader{
     font-family: "Inter", sans-serif;
     font-size: 6vw;
     color: white;
     text-align: center;
-    margin-top: calc(35vh - 100px);
+    margin-top: calc(25vh - 100px);
     padding-bottom: 50px;
 }
 
 .contactInfoHeader{
     font-family: "Inter", sans-serif;
-    font-size: 5vw;
+    font-size: 3vw;
     color: white;
     text-align: center;
 }
@@ -162,4 +201,11 @@ display: block;
     display: none;
 }
 
+.contactContainer{
+    width: 85%;
+}
+
+.contactInfoHeader{
+    font-size: 4vw;
+}
 }

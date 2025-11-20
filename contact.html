@@ -10,7 +10,7 @@
 
 <body>
     <nav class="navBar">
-<h1 class="logoHeader"><a class="a" href="index.html">Tom de Jong</a></h1>
+        <h1 class="logoHeader"><a class="a" href="index.html">Tom de Jong</a></h1>
         <ul class="navButtonList">
             <li class="listItemMain"><a class="a" href="index.html">Home</a></li>
             <li class="listItemMain"><a class="a" href="contact.html">Contact</a></li>
@@ -32,16 +32,31 @@
 
             <h1 class="contactHeader">Contact</h1>
 
-            <h1  class="contactInfoHeader">E-mail: <span class="mark">tomdejong2009@gmail.com</a></span></h1>
-            <h1  class="contactInfoHeader">Instagram: <span class="mark"><a class="a2"href="https://www.instagram.com/tomdejongwebsites/">@tomdejongwebsites</a></span></h1>
+            <article class="contactCard">
+                <div class="contactContainer">
+                    <h1 class="contactInfoHeader">E-mail: <span class="mark">tomdejong2009@gmail.com</a></span></h1>
+                    <input type="text" id="emailCopy" value="tomdejong2009@gmail.com" style="display: none;">
+                    <button class="button" id="changeEmail" onclick="CopyEmail()">Copy</button>
+                </div>
+            </article>
 
-            
-                </article>
-        </section>
-        <p class="copyrightText">© 2025 Tom de Jong</p>
+            <article class="contactCard">
+                <div class="contactContainer">
+                    <h1 class="contactInfoHeader">Instagram: <span class="mark"><a class="a2" href="https://www.instagram.com/tomdejongwebsites/">@tomdejongwebsites</a></span></h1>
+                    <input type="text" id="instagramCopy" value="https://www.instagram.com/tomdejongwebsites/" style="display: none;">
+                    <button class="button" id="changeInsta" onclick="CopyInsta()">Copy</button>
+                </div>
+            </article>
+
+
+
+        </article>
+    </section>
+    <p class="copyrightText">© 2025 Tom de Jong</p>
 
 
 
 </body>
-    <script src="hamburger.js" defer></script>
+<script src="hamburger.js" defer></script>
+
 </html>

@@ -104,10 +104,21 @@ background: linear-gradient(0deg, #202d41 0%, rgba(70, 82, 114, 1) 100%);
     padding-bottom: 50px;
 }
 
+.projectsIntro{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
 .projectContainer{
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .projects{
@@ -178,6 +189,11 @@ margin-bottom: 50px;
     transition: 0.5s ease;
     margin-bottom: 50px;
 }
+
+.projectContainer{
+    margin-bottom: 0px;
+}
+
 }
 
 @media (max-width: 700px) {
