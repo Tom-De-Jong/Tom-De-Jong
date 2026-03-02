@@ -1,6 +1,6 @@
 # Hello!
 
-My name is Tom de Jong and i am a proffessional developer with years of experience. i create beautiful, secure, and working software.
+My name is Tom de Jong and i am a professional developer with years of experience. i create beautiful, secure, and working software.
 interested, questions or just want to talk? Reach me via email! tomdejong2009@gmail.com 
 
 ## ⏱ Hackatime Stats
