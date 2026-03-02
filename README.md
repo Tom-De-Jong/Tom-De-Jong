@@ -1,39 +1,7 @@
-<h1 align="left">Hey!!👋<br>My name is Tom De Jong</h1>
+# Hello!
 
-###
+My name is Tom de Jong and i am a proffessional developer with years of experience. i create beautiful, secure, and working software.
+imterested, questions or just want to talk? Reach me via email! tomdejong2009@gmail.com 
 
-<p align="left">I'm a young developer from the Netherlands. I code with HTML CSS and Javascript. Check out my website!<br>https://tom-de-jong.github.io/Tom-De-Jong/</p>
-
-###
-
-<h2 align="left">About me</h2>
-
-###
-
-<p align="left">✨ Coding since 2021<br>📚 I'm currently working on my webdevelopement skills<br><br>🎯 Goals: Starting my own webdevelopement business<br><br>🎲 Fun fact: I am 17 years old!!</p>
-
-###
-
-<h2 align="left">I code with</h2>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-</div>
-
-###
-
-<h2 align="left">I also use</h2>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="40" alt="blender logo"  />
-</div>
-
-###
+## ⏱ Hackatime Stats
+https://github-readme-stats.hackclub.dev/api/wakatime?username=28751&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8
